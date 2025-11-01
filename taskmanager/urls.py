@@ -40,7 +40,7 @@ router.register(r'tasks', TaskViewSet, basename='task')
 # -------------------------------
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('api/', include('core.urls')),
+    path('', include('core.urls')),
 
 
     # Projects & Tasks CRUD
